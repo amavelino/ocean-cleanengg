@@ -26,7 +26,28 @@
           <argument>
             <kind>1</kind>
             <string>///randomize trash appearance
-sprite_index = choose(bottle1, bottle2, plastic_bag1, straw1, straw2);
+depth = -500
+sprite_index = choose(bottle1, bottle2, plastic_bag1, straw1, straw2, cup1);
+
+if sprite_index == bottle1 {
+    image_xscale = 40 / sprite_get_width(sprite_index);
+    image_yscale = 57 / sprite_get_height(sprite_index); 
+} else if sprite_index == bottle2 {
+    image_xscale = 20 / sprite_get_width(sprite_index);
+    image_yscale = 43 / sprite_get_height(sprite_index); 
+} else if sprite_index == plastic_bag1 {
+    image_xscale = 50 / sprite_get_width(sprite_index);
+    image_yscale = 56 / sprite_get_height(sprite_index); 
+} else if sprite_index == straw1 {
+    image_xscale = 30 / sprite_get_width(sprite_index);
+    image_yscale = 30 / sprite_get_height(sprite_index); 
+} else if sprite_index == straw2 {
+    image_xscale = 50 / sprite_get_width(sprite_index);
+    image_yscale = 50 / sprite_get_height(sprite_index); 
+} else if sprite_index == cup1 {
+    image_xscale = 15 / sprite_get_width(sprite_index);
+    image_yscale = 19 / sprite_get_height(sprite_index); 
+} 
 </string>
           </argument>
         </arguments>

@@ -3,22 +3,22 @@
   <type>0</type>
   <xorig>138</xorig>
   <yorigin>295</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
+  <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>36</bbox_left>
-  <bbox_right>46</bbox_right>
-  <bbox_top>77</bbox_top>
-  <bbox_bottom>99</bbox_bottom>
+  <bbox_left>0</bbox_left>
+  <bbox_right>275</bbox_right>
+  <bbox_top>0</bbox_top>
+  <bbox_bottom>590</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>83</width>
-  <height>177</height>
+  <width>276</width>
+  <height>591</height>
   <frames>
     <frame index="0">images\bottle2_0.png</frame>
   </frames>

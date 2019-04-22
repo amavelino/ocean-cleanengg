@@ -30,6 +30,7 @@
       <sprite>sprites\plastic_bag1</sprite>
       <sprite>sprites\straw1</sprite>
       <sprite>sprites\straw2</sprite>
+      <sprite>sprites\cup1</sprite>
     </sprites>
     <sprite>sprites\sea_translucent</sprite>
   </sprites>
