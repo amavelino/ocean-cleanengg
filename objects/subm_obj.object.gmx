@@ -32,6 +32,35 @@ y = 50;
 image_speed = 0.3;
 
 depth = 100;
+
+instanceStart = false;
+alarm[0]=1*room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///generate trash
+generate_trash(instanceStart, 10);
+///reset alarm?
+alarm[0] = 5*room_speed;
 </string>
           </argument>
         </arguments>
@@ -58,11 +87,31 @@ depth = 100;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>50</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0.3</string>
+            <string>0.4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
