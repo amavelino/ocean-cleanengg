@@ -67,6 +67,7 @@
     <room>rooms\_startmenu</room>
     <room>rooms\sample_level</room>
     <room>rooms\trash_index</room>
+    <room>rooms\level_results</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
