@@ -21,9 +21,6 @@
       <sprite>sprites\arrow_sprite</sprite>
       <sprite>sprites\back_sprite</sprite>
     </sprites>
-    <sprite>sprites\boat</sprite>
-    <sprite>sprites\submarine</sprite>
-    <sprite>sprites\grid</sprite>
     <sprites name="trash sprites">
       <sprite>sprites\bottle1</sprite>
       <sprite>sprites\bottle2</sprite>
@@ -32,6 +29,8 @@
       <sprite>sprites\straw2</sprite>
       <sprite>sprites\cup1</sprite>
     </sprites>
+    <sprite>sprites\submarine</sprite>
+    <sprite>sprites\grid</sprite>
     <sprite>sprites\sea_translucent</sprite>
   </sprites>
   <backgrounds name="background">
@@ -60,8 +59,8 @@
     </objects>
     <object>objects\player</object>
     <object>objects\subm_obj</object>
-    <object>objects\boat_obj</object>
     <object>objects\trash_item</object>
+    <object>objects\inventory_display</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_startmenu</room>
