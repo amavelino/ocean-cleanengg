@@ -35,8 +35,11 @@ menu[2] = "Quit";
 space = 32;
 mpos = 0;
 
+x = 45;
+y = 555;
 
-draw_sprite(sprite_index, 0, 50, 100);
+image_xscale = 80 / sprite_get_width(sprite_index);
+image_yscale = 80 / sprite_get_height(sprite_index); 
 </string>
           </argument>
         </arguments>
@@ -59,9 +62,9 @@ draw_sprite(sprite_index, 0, 50, 100);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///update score??
+            <string>///change sprite when hovered
 if(position_meeting(mouse_x, mouse_y, id)) {
-    sprite_index = backpack_hover;
+    sprite_index = trash_hover;
 } else {
     sprite_index = backpack_idle;
 }

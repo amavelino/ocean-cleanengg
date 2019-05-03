@@ -54,6 +54,8 @@
     <script>scripts\generate_trash.gml</script>
     <script>scripts\add_weight.gml</script>
     <script>scripts\set_player_speed.gml</script>
+    <script>scripts\track_inventory.gml</script>
+    <script>scripts\throw_inventory.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
