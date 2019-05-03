@@ -28,7 +28,8 @@
             <string>/// initialize menu contents and positions
 menu[0] = "Start";
 menu[1] = "Trash Index";
-menu[2] = "Quit";
+menu[2] = "Credits";
+menu[3] = "Quit";
 
 space = 32;
 mpos = 0;
