@@ -73,6 +73,7 @@
     <object>objects\subm_obj</object>
     <object>objects\trash_item</object>
     <object>objects\inventory_display</object>
+    <object>objects\unavailable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_startmenu</room>
