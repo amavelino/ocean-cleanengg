@@ -27,7 +27,11 @@
       <sprite>sprites\plastic_bag1</sprite>
       <sprite>sprites\straw1</sprite>
       <sprite>sprites\straw2</sprite>
-      <sprite>sprites\cup1</sprite>
+      <sprite>sprites\plastic_lid</sprite>
+      <sprite>sprites\bottle_cap1</sprite>
+      <sprite>sprites\bottle_cap2</sprite>
+      <sprite>sprites\styrofoam_1</sprite>
+      <sprite>sprites\styrofoam_2</sprite>
     </sprites>
     <sprite>sprites\submarine</sprite>
     <sprite>sprites\grid</sprite>

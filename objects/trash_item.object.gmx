@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>///randomize trash appearance
 depth = -500
-sprite_index = choose(bottle1, bottle2, plastic_bag1, straw1, straw2, cup1);
+sprite_index = choose(bottle1, bottle2, plastic_bag1, straw1, straw2, 
+                plastic_lid, bottle_cap1, bottle_cap2, styrofoam_1, styrofoam_2);
 
 if sprite_index == bottle1 {
     image_xscale = 40 / sprite_get_width(sprite_index);
@@ -44,9 +45,21 @@ if sprite_index == bottle1 {
 } else if sprite_index == straw2 {
     image_xscale = 50 / sprite_get_width(sprite_index);
     image_yscale = 50 / sprite_get_height(sprite_index); 
-} else if sprite_index == cup1 {
-    image_xscale = 15 / sprite_get_width(sprite_index);
-    image_yscale = 19 / sprite_get_height(sprite_index); 
+} else if sprite_index == plastic_lid {
+    image_xscale = 25 / sprite_get_width(sprite_index);
+    image_yscale = 8 / sprite_get_height(sprite_index); 
+}  else if sprite_index == bottle_cap1 {
+    image_xscale = 10 / sprite_get_width(sprite_index);
+    image_yscale = 11 / sprite_get_height(sprite_index); 
+}  else if sprite_index == bottle_cap2 {
+    image_xscale = 10 / sprite_get_width(sprite_index);
+    image_yscale = 10 / sprite_get_height(sprite_index); 
+}  else if sprite_index == styrofoam_1 {
+    image_xscale = 30 / sprite_get_width(sprite_index);
+    image_yscale = 21 / sprite_get_height(sprite_index); 
+}  else if sprite_index == styrofoam_2 {
+    image_xscale = 40 / sprite_get_width(sprite_index);
+    image_yscale = 40 / sprite_get_height(sprite_index); 
 } 
 </string>
           </argument>
