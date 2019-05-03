@@ -36,6 +36,12 @@
     <sprite>sprites\submarine</sprite>
     <sprite>sprites\grid</sprite>
     <sprite>sprites\sea_translucent</sprite>
+    <sprites name="inventory sprites">
+      <sprite>sprites\backpack_idle</sprite>
+      <sprite>sprites\backpack_hover</sprite>
+      <sprite>sprites\trash_idle</sprite>
+      <sprite>sprites\trash_hover</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\grid_bg</background>

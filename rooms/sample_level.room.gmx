@@ -57,6 +57,7 @@ generate_trash(instanceStart, 50);</code>
     <instance objName="player" x="-140" y="180" name="inst_B56929A8" locked="0" code="" scaleX="1.37999999523163" scaleY="1.45000004768372" colour="4294967295" rotation="0"/>
     <instance objName="back_button" x="720" y="560" name="inst_F7A5BDF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="sea_filter" x="0" y="0" name="inst_D699B344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="inventory_display" x="80" y="540" name="inst_8A730A3F" locked="0" code="" scaleX="0.310126572847366" scaleY="0.312302827835083" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
