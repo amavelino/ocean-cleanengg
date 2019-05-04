@@ -92,22 +92,6 @@ if (x&lt;=-50) {
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="player">
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -124,12 +108,16 @@ if (x&lt;=-50) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///add to player's inventory
-
-for (i=0; i&lt;global.trash_list_length; i++) {
-    if (global.trash_list[i, 0] == sprite_index) {
-        global.trash_list[i, 2] += 1;
-        break;
+            <string>///player collision behavior
+if place_meeting(x, y, player) {
+    if (global.weight &lt; 9) {
+        for (i=0; i&lt;global.trash_list_length; i++) {
+            if (global.trash_list[i, 0] == sprite_index) {
+                global.trash_list[i, 2] += 1;
+                break;
+            }
+        }
+        instance_destroy();
     }
 }
 </string>

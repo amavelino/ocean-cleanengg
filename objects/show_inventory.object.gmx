@@ -135,10 +135,11 @@ draw_sprite(sprite_index, 0, x+16, y+(mpos*space))
 */
 if (open) {
     draw_self();
-    draw_set_alpha(0.5);
+    draw_set_alpha(0.75);
     draw_set_colour(c_black);
     draw_roundrect(100, 555, 400, 595, false);
     draw_set_alpha(1);
+    track_inventory();
 } else {
     draw_self();
 }

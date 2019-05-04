@@ -1,8 +1,3 @@
-/*angle = random(2 * pi);
-
-x_range = x+5 + (100*cos(angle)) //random_range(0, room_width)
-y_range = y+5 + (100*sin(angle))//random_range(100, room_height)
-*/
 for (i=0; i<global.trash_list_length; i++) {
     if (global.trash_list[i, 2]>0) {
         object_set_sprite(trash_item, global.trash_list[i, 0]);
