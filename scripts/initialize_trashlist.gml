@@ -1,3 +1,5 @@
+global.trash_list_length = 10;
+
 //sprite names
 global.trash_list[0, 0] = bottle1;
 global.trash_list[1, 0] = bottle2;
