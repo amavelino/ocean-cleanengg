@@ -124,9 +124,8 @@ if (x&lt;=-50) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///add to player's weight and inventory
+            <string>///add to player's inventory
 
-add_weight();
 for (i=0; i&lt;global.trash_list_length; i++) {
     if (global.trash_list[i, 0] == sprite_index) {
         global.trash_list[i, 2] += 1;

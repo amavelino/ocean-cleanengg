@@ -9,10 +9,10 @@ for (i=0; i<global.trash_list_length; i++) {
         
         for(j=0; j<global.trash_list[i, 2]; j++) {
         
-            angle = random(2 * pi);
-            x_range = clamp((player.x + (70*cos(angle))),
+            angle = (pi/3)+ random(pi/2);
+            x_range = clamp((player.x + (65*cos(angle))),
                     0, room_width-32);
-            y_range = clamp((player.y + (70*sin(angle))),
+            y_range = clamp((player.y + (65*sin(angle))),
                     0, room_height-32);
                     
             with (instance_create(x_range, y_range, trash_item)) {

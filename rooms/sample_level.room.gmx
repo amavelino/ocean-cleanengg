@@ -12,7 +12,19 @@
   <showcolour>-1</showcolour>
   <code>var instanceStart = true;
 room_speed = 30;
-generate_trash(instanceStart, 50);</code>
+generate_trash(instanceStart, 50);
+
+//level score
+global.trash_list[0, 4] = 0;
+global.trash_list[1, 4] = 0;
+global.trash_list[2, 4] = 0;
+global.trash_list[3, 4] = 0;
+global.trash_list[4, 4] = 0;
+global.trash_list[5, 4] = 0;
+global.trash_list[6, 4] = 0;
+global.trash_list[7, 4] = 0;
+global.trash_list[8, 4] = 0;
+global.trash_list[9, 4] = 0;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

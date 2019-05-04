@@ -52,7 +52,7 @@
     <script>scripts\move.gml</script>
     <script>scripts\menu_script.gml</script>
     <script>scripts\generate_trash.gml</script>
-    <script>scripts\add_weight.gml</script>
+    <script>scripts\get_weight.gml</script>
     <script>scripts\set_player_speed.gml</script>
     <script>scripts\track_inventory.gml</script>
     <script>scripts\throw_inventory.gml</script>

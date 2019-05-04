@@ -47,3 +47,15 @@ global.trash_list[6, 3] = false;
 global.trash_list[7, 3] = false;
 global.trash_list[8, 3] = false;
 global.trash_list[9, 3] = false;
+
+//level score
+global.trash_list[0, 4] = 0;
+global.trash_list[1, 4] = 0;
+global.trash_list[2, 4] = 0;
+global.trash_list[3, 4] = 0;
+global.trash_list[4, 4] = 0;
+global.trash_list[5, 4] = 0;
+global.trash_list[6, 4] = 0;
+global.trash_list[7, 4] = 0;
+global.trash_list[8, 4] = 0;
+global.trash_list[9, 4] = 0;
