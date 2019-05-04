@@ -33,15 +33,15 @@
       <sprite>sprites\styrofoam_1</sprite>
       <sprite>sprites\styrofoam_2</sprite>
     </sprites>
-    <sprite>sprites\submarine</sprite>
-    <sprite>sprites\grid</sprite>
-    <sprite>sprites\sea_translucent</sprite>
     <sprites name="inventory sprites">
       <sprite>sprites\backpack_idle</sprite>
       <sprite>sprites\backpack_hover</sprite>
       <sprite>sprites\trash_idle</sprite>
       <sprite>sprites\trash_hover</sprite>
     </sprites>
+    <sprite>sprites\submarine</sprite>
+    <sprite>sprites\grid</sprite>
+    <sprite>sprites\sea_translucent</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grid_bg</background>
@@ -56,6 +56,7 @@
     <script>scripts\set_player_speed.gml</script>
     <script>scripts\track_inventory.gml</script>
     <script>scripts\throw_inventory.gml</script>
+    <script>scripts\initialize_trashlist.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -64,16 +65,18 @@
     <objects name="navigation objects">
       <object>objects\obj_menu</object>
       <object>objects\back_button</object>
+      <object>objects\unavailable</object>
     </objects>
-    <objects name="filter objects (bg)">
-      <object>objects\sea_filter</object>
-      <object>objects\grid_obj</object>
+    <objects name="level objects">
+      <object>objects\player</object>
+      <object>objects\subm_obj</object>
+      <object>objects\trash_item</object>
+      <object>objects\inventory_display</object>
+      <objects name="filter objects (bg)">
+        <object>objects\sea_filter</object>
+        <object>objects\grid_obj</object>
+      </objects>
     </objects>
-    <object>objects\player</object>
-    <object>objects\subm_obj</object>
-    <object>objects\trash_item</object>
-    <object>objects\inventory_display</object>
-    <object>objects\unavailable</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_startmenu</room>
