@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///randomize trash appearance
-depth = -500
+depth = random_range(-100, 100);
 //sprite_index = choose(bottle1, bottle2, plastic_bag1, straw1, straw2, 
 //                plastic_lid, bottle_cap1, bottle_cap2, styrofoam_1, styrofoam_2);
 
