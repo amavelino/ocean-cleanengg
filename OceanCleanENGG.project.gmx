@@ -66,6 +66,7 @@
       <object>objects\obj_menu</object>
       <object>objects\back_button</object>
       <object>objects\unavailable</object>
+      <object>objects\score</object>
     </objects>
     <objects name="level objects">
       <object>objects\player</object>
