@@ -40,6 +40,8 @@ y = 575;
 
 image_xscale = 50 / sprite_get_width(sprite_index);
 image_yscale = 50 / sprite_get_height(sprite_index); 
+
+open = false;
 </string>
           </argument>
         </arguments>
@@ -67,6 +69,34 @@ if(position_meeting(mouse_x, mouse_y, id)) {
     sprite_index = backpack_hover;
 } else {
     sprite_index = backpack_idle;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///switch open status
+if(open) {
+    open = false;
+} else {
+    open = true;
 }
 </string>
           </argument>
@@ -103,7 +133,15 @@ for (m=0; m&lt;array_length_1d(menu); m+=1) {
 
 draw_sprite(sprite_index, 0, x+16, y+(mpos*space))
 */
-draw_self();
+if (open) {
+    draw_self();
+    draw_set_alpha(0.5);
+    draw_set_colour(c_black);
+    draw_roundrect(100, 555, 400, 595, false);
+    draw_set_alpha(1);
+} else {
+    draw_self();
+}
 </string>
           </argument>
         </arguments>
