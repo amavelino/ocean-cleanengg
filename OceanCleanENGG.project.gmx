@@ -42,6 +42,7 @@
     <sprite>sprites\submarine</sprite>
     <sprite>sprites\grid</sprite>
     <sprite>sprites\sea_translucent</sprite>
+    <sprite>sprites\results_box</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\grid_bg</background>
