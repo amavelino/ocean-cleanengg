@@ -83,7 +83,7 @@ if sprite_index == bottle1 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///destroy if we reached end of screen
+            <string>///destroy at end of screen
 
 if (x&lt;=-50) {
     instance_destroy();
@@ -108,7 +108,7 @@ if (x&lt;=-50) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///player collision behavior
+            <string>///destroy at player collision
 if place_meeting(x, y, player) {
     if (global.weight &lt; 9) {
         for (i=0; i&lt;global.trash_list_length; i++) {

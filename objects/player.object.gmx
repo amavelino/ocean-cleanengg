@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///set starting point and WASD input
-global.weight = 0;
-global.player_speed = 3;
+
+get_weight();
+set_player_speed();
 
 x = 5;
 y = 25;
