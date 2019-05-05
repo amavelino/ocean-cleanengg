@@ -33,6 +33,8 @@ menu[3] = "Quit";
 
 space = 32;
 mpos = 0;
+
+depth = -1000;
 </string>
           </argument>
         </arguments>

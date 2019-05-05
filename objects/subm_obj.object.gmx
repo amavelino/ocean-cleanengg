@@ -26,15 +26,33 @@
           <argument>
             <kind>1</kind>
             <string>///set starting point and image speed
-x = 0.1;
-y = 50;
+if (room_get_name(room) != "_startmenu") {
+    hspeed = 0.8;
+    vspeed = 0;
+    x = 0.1;
+    y = 50;
+} else {
+    x = 400;
+    y = 400;
+    hspeed = 0;
+    vspeed = 0;
+}
 
 image_speed = 0.3;
 
-depth = 100;
+depth = 50;
 
 instanceStart = false;
 alarm[0]=1*room_speed;
+
+/// trying wave
+t = 0;
+increment = 12; //degrees -- freq = 1 oscillation per second (1Hz)
+amplitude = 10; //pixels of peak oscillation
+ 
+//clone the x- and y-positions
+xx = x;
+yy = y;
 </string>
           </argument>
         </arguments>
@@ -69,29 +87,26 @@ alarm[0] = 5*room_speed;
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>105</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_point</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>room_width+100</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0.8</string>
+            <kind>1</kind>
+            <string>/// end game if we reach end of screen
+
+if (x&gt;=room_width) {
+    room_goto(level_results);
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -111,10 +126,22 @@ alarm[0] = 5*room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// end game if we reach end of screen
+            <string>/// movement
+t = (t + increment) mod 360;
+shift = amplitude * dsin(t);
 
-if (x&gt;=room_width) {
-    room_goto(level_results);
+//clone the movement from the object's speed and direction
+xx += hspeed;
+yy += vspeed;
+
+if (room_get_name(room) == "_startmenu") {    
+    //apply the shift
+    x = xx + lengthdir_x(shift, direction + 90);
+    y = yy + lengthdir_y(shift, direction + 90);
+} else {
+    //apply the shift
+    x = xx + lengthdir_x(shift, direction + 90);
+    y = yy + lengthdir_y(shift, direction + 90);
 }
 </string>
           </argument>

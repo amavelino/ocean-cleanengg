@@ -19,3 +19,5 @@ for (i=0; i<global.trash_list_length; i++) {
         global.trash_list[i, 2] = 0;
     }
 }
+sound_volume(drop_sound, 0.1);
+audio_play_sound(drop_sound, 10, false);

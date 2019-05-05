@@ -11,7 +11,7 @@ switch(mpos) {
     }
     case 2:
     {
-        room_goto(credits);
+        room_goto(credits_room);
         break;
     }
     case 3:

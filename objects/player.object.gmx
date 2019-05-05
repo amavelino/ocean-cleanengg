@@ -191,15 +191,22 @@ y=clamp(y, 0, room_height-32);
           <argument>
             <kind>1</kind>
             <string>/// drop items if it collides with submarine
+drop = false;
 if place_meeting(x, y, subm_obj) {
     for(i=0; i&lt;global.trash_list_length; i++) {
         if(global.trash_list[i,2]&gt;0) {
+            drop = true;
             global.trash_list[i,3] = true;
             global.trash_list[i,4] += global.trash_list[i,2];
             global.trash_list[i,2] = 0;
         }
     }
     get_weight();
+}
+if (drop) {
+    sound_volume(drop_sound, 0.1);
+    audio_play_sound(drop_sound, 10, false);
+    drop = false;
 }
 </string>
           </argument>

@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\pickup_sound</sound>
+    <sound>sound\drop_sound</sound>
+    <sound>sound\maintheme</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="swimmer sprites">
       <sprite>sprites\swimmer_down</sprite>
@@ -80,13 +84,14 @@
       </objects>
       <object>objects\dispose_inventory</object>
     </objects>
+    <object>objects\credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\_startmenu</room>
     <room>rooms\sample_level</room>
     <room>rooms\trash_index</room>
     <room>rooms\level_results</room>
-    <room>rooms\credits</room>
+    <room>rooms\credits_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
