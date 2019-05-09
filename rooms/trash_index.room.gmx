@@ -52,7 +52,9 @@
   </views>
   <instances>
     <instance objName="back_button" x="224" y="192" name="inst_A1661299" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="unavailable" x="224" y="320" name="inst_4002A116" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="index_menu_next" x="64" y="288" name="inst_FE8D4628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="index_menu_back" x="160" y="320" name="inst_2438AC6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="index_info" x="256" y="320" name="inst_FD8A9D5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

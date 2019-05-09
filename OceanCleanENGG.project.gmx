@@ -24,6 +24,8 @@
     <sprites name="navigation buttons">
       <sprite>sprites\arrow_sprite</sprite>
       <sprite>sprites\back_sprite</sprite>
+      <sprite>sprites\next_index</sprite>
+      <sprite>sprites\back_index</sprite>
     </sprites>
     <sprites name="trash sprites">
       <sprite>sprites\bottle1</sprite>
@@ -47,6 +49,14 @@
     <sprite>sprites\grid</sprite>
     <sprite>sprites\sea_translucent</sprite>
     <sprite>sprites\results_box</sprite>
+    <sprites name="trash index">
+      <sprite>sprites\index_bottles</sprite>
+      <sprite>sprites\index_plasticbag</sprite>
+      <sprite>sprites\index_straws</sprite>
+      <sprite>sprites\index_plasticlid</sprite>
+      <sprite>sprites\index_bottlecaps</sprite>
+      <sprite>sprites\index_styrofoams</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\grid_bg</background>
@@ -62,6 +72,7 @@
     <script>scripts\track_inventory.gml</script>
     <script>scripts\throw_inventory.gml</script>
     <script>scripts\initialize_trashlist.gml</script>
+    <script>scripts\navigate_index.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\menu_font</font>
@@ -71,7 +82,10 @@
       <object>objects\obj_menu</object>
       <object>objects\back_button</object>
       <object>objects\unavailable</object>
-      <object>objects\score</object>
+      <object>objects\game_score</object>
+      <object>objects\index_menu_next</object>
+      <object>objects\index_menu_back</object>
+      <object>objects\index_info</object>
     </objects>
     <objects name="level objects">
       <object>objects\player</object>
